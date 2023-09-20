@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo.gif" alt="gif" id="logo">
+    </header>
+    <div class="container-main">
+
+        <div class="container-input">
+            <label class="l-input" >Converter <b>de</b></label>
+            <select name="select" class="s-converter" id="currency-select">
+                <option value="real">R$ Real brasileiro</option>
+            </select>
+
+            <label class="l-input">Converter <b>para</b></label>
+            <select name="select" class="s-converter" id="converter-para">
+                <option class="option-us">US$ Dólar americano</option>
+                <option class="option-eu">€ Euro</option>
+            </select>
+
+            <label class="l-input">Valor</label>
+            <input placeholder="R$ 10.000,00" class="s-converter" id="input-real">
+
+            <button class="convert-button">Converter</button>
+        </div>
+
+        <div class="dashbord">
+            <div class="container-arrow">
+                <img src="./assets/brasil.png" alt="">
+                <p class="p-result">Real</p>
+                <p class="pv" id="real-value-text">R$ 10.000,00</p>
+            </div>
+
+            <div class="container-arrow">
+                <img src="./assets/arrow.png" alt="arrow">
+            </div>
+
+            <div class="container-arrow">
+                <img id="currency-img" src="./assets/usa.png" alt="">
+                <p id="currency-name" >Dólar Americano</p>
+                <p id="value-text" class="pv">US$ 2.000,00</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+</html>
